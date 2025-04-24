@@ -53,6 +53,17 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Test",
+        "groups": [
+          {
+            "group": "mydocs",
+            "pages": [
+              "mydocs/a1"
+            ]
+          }
+        ]
       }
     ],
     "global": {
