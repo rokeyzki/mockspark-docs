@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
+  "theme": "maple",
   "name": "Mint Starter Kit",
   "colors": {
     "primary": "#16A34A",
@@ -8,17 +8,80 @@
     "dark": "#15803D"
   },
   "favicon": "/favicon.svg",
+  "icons": {
+    "library": "lucide"
+  },
   "navigation": {
-    "tabs": [
+    "dropdowns": [
       {
-        "tab": "Guides",
+        "dropdown": "Documentation",
+        "icon": "book",
+        "description": "Set up your documentation",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Getting Started",
             "pages": [
-              "introduction",
-              "quickstart",
-              "development"
+              "chinese/get-started/introduction",
+              "chinese/get-started/quickstart",
+              "chinese/get-started/todo"
+            ]
+          },
+          {
+            "group": "Connection Platform",
+            "pages": [
+              "chinese/connections/workflow",
+              {
+                "group": "Store Platform",
+                "icon": "shopping-basket",
+                "pages": ["chinese/connections/shopify"]
+              },
+              {
+                "group": "Fulfillment Platform",
+                "icon": "truck",
+                "pages": [
+                  "chinese/connections/printify",
+                  "chinese/connections/printful"
+                ]
+              }
+            ]
+          },
+          {
+            "group": "Products and Modeling",
+            "pages": [
+              "chinese/products/products",
+              "chinese/products/mockup-creator",
+              "chinese/products/personalizer"
+            ]
+          },
+          {
+            "group": "Orders and Fulfillment",
+            "pages": ["chinese/order-items/order-items"]
+          },
+          {
+            "group": "Marketing",
+            "pages": ["chinese/marketing/picture-collections"]
+          },
+          {
+            "group": "Payment and Billing",
+            "pages": [
+              "chinese/billing/subscription-plans",
+              "chinese/billing/credit",
+              "chinese/billing/usages",
+              "chinese/billing/purchases"
+            ]
+          },
+          {
+            "group": "Account and Team",
+            "pages": [
+              "chinese/team/account-settings",
+              {
+                "group": "Team Management",
+                "icon": "users",
+                "pages": [
+                  "chinese/team/roles",
+                  "chinese/team/staff"
+                ]
+              }
             ]
           },
           {
@@ -33,58 +96,8 @@
             ]
           }
         ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Test",
-        "groups": [
-          {
-            "group": "My Docs",
-            "pages": [
-              "mydocs/a1"
-            ]
-          }
-        ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
