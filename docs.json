@@ -59,7 +59,10 @@
           },
           {
             "group": "Orders and Fulfillment",
-            "pages": ["chinese/order-items/order-items"]
+            "pages": [
+              "chinese/order-items/order-items",
+              "chinese/order-items/troubleshooting"
+            ]
           },
           {
             "group": "Marketing",
