@@ -81,14 +81,7 @@
             "group": "Account and Team",
             "pages": [
               "chinese/team/account-settings",
-              {
-                "group": "Team Management",
-                "icon": "users",
-                "pages": [
-                  "chinese/team/roles",
-                  "chinese/team/staff"
-                ]
-              }
+              "chinese/team/team-management"
             ]
           },
           {
