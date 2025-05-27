@@ -3,3 +3,100 @@ title: Order-Items
 description: "xxxxxx"
 icon: "list-ordered"
 ---
+
+import { ColorText } from "/snippets/color-text.mdx"
+
+## 1111
+1111
+
+11111 <ColorText color="#3b82f6" text="111111 2222" /> 222222
+
+<br/>
+status: \n <ColorText color="#3b82f6" text="Generating" />
+<ColorText color="#eab308" text="Ready to fulfill" />
+<br/>
+<ColorText color="#3b82f6" text="Sending" />
+<br/>
+<ColorText color="#3b82f6" text="Being fulfilled" />
+<br/>
+<ColorText color="#22c55e" text="Fulfilled" />
+<br/>
+<ColorText color="#ef4444" text="On hold" />
+<br/>
+<ColorText color="#6b7280" text="Canceled" />
+<br/>
+<ColorText color="#6b7280" text="Archived" />
+
+```mermaid
+flowchart TB
+    A([Customers place orders on the sales platform]) --> B[MockSpark receives Order-Item]
+    B --> C[Generate production file]
+    C --> D{Is production file generated successfully?}
+    D -->|Yes| E[Order-Item status: \n Ready to fulfill]
+    D -->|No| F[Order-Item status: \n On hold]
+
+    E --> H[Merchant checks production file and delivery info]
+    H --> I[Send Order-Item to fulfillment platform]
+    I --> J{Is Order-Item sent successfully?}
+    J -->|No| L[Order-Item status: \n On hold]
+    J -->|Yes| K[Order-Item status: \n Being fulfilled]
+
+    K --> M[Fulfillment platform completes production and shipping]
+    M --> N{Is there an error from the fulfillment platform?}
+    N -->|Yes| O[Order-Item status: \n On hold]
+    N -->|No| P[Order-Item status: \n Fulfilled]
+
+    P --> Q([Receive ❤ positive feedback from customers])
+```
+
+<Frame caption="xxx">
+  <img src="/images/order-items/order-items/PixPin_2025-05-27_16-24-58.png" />
+</Frame>
+
+<Frame caption="xxx">
+  <img src="/images/order-items/order-items/PixPin_2025-05-27_16-27-00.png" />
+</Frame>
+
+<Frame caption="xxx">
+  <img src="/images/order-items/order-items/PixPin_2025-05-27_16-32-42.png" />
+</Frame>
+
+<Frame caption="xxx">
+  <img src="/images/order-items/order-items/PixPin_2025-05-27_16-34-25.png" />
+</Frame>
+
+<Frame caption="xxx">
+  <img src="/images/order-items/order-items/PixPin_2025-05-27_16-53-58.png" />
+</Frame>
+
+<Frame caption="xxx">
+  <img src="/images/order-items/order-items/PixPin_2025-05-27_16-54-47.png" />
+</Frame>
+
+<Frame caption="xxx">
+  <img src="/images/order-items/order-items/PixPin_2025-05-27_16-56-53.png" />
+</Frame>
+
+<Frame caption="xxx">
+  <img src="/images/order-items/order-items/PixPin_2025-05-27_16-58-53.png" />
+</Frame>
+
+<Frame caption="xxx">
+  <img src="/images/order-items/order-items/PixPin_2025-05-27_17-00-24.png" />
+</Frame>
+
+<Frame caption="xxx">
+  <img src="/images/order-items/order-items/PixPin_2025-05-27_17-02-14.png" />
+</Frame>
+
+<Frame caption="xxx">
+  <img src="/images/order-items/order-items/PixPin_2025-05-27_17-03-23.png" />
+</Frame>
+
+<Frame caption="xxx">
+  <img src="/images/order-items/order-items/PixPin_2025-05-27_17-04-15.png" />
+</Frame>
+
+<Frame caption="xxx">
+  <img src="/images/order-items/order-items/PixPin_2025-05-27_17-05-13.png" />
+</Frame>
