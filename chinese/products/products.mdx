@@ -60,37 +60,37 @@ If you’ll be printing your design, we suggest using CMYK colors to help make s
 
 1. Please enter your product title.
 2. Please enter a detailed description of your product in the rich text editor.
-<Frame caption="xxx">
+<Frame>
   <img src="/images/products/products/PixPin_2025-05-17_15-06-49.png" />
 </Frame>
 
 Click **New Image** to upload a picture for your product.
-<Frame caption="xxx">
+<Frame>
   <img src="/images/products/products/PixPin_2025-05-17_15-08-20.png" />
 </Frame>
 
 Choose how you'd like to upload your product image.
-<Frame caption="xxx">
+<Frame>
   <img src="/images/products/products/PixPin_2025-05-17_15-10-36.png" />
 </Frame>
 
 Upload a front view of a white T-shirt, then click **Using this image**.
-<Frame caption="xxx">
+<Frame>
   <img src="/images/products/products/PixPin_2025-05-17_15-26-10.png" />
 </Frame>
 
 Enter the vendor name for this product.
-<Frame caption="xxx">
+<Frame>
   <img src="/images/products/products/PixPin_2025-05-17_16-36-58.png" />
 </Frame>
 
-Select **Add Print-Area**
-<Frame caption="xxx">
+Select **Add Print-Area**.
+<Frame>
   <img src="/images/products/products/PixPin_2025-05-17_16-42-03.png" />
 </Frame>
 
 Name this Print-Area `Front Side`.
-<Frame caption="xxx">
+<Frame>
   <img src="/images/products/products/PixPin_2025-05-17_16-44-41.png" />
 </Frame>
 
@@ -101,7 +101,7 @@ Uploading a **Diagram** is optional. If you don’t provide one, the system will
 <Warning>**Diagrams** image must be in .jpg or .png format, sized at 100 × 100 pixels, and no larger than 1MB.</Warning>
 
 Upload an image to use as the **Diagram** for this Print-Area.
-<Frame caption="xxx">
+<Frame>
   <img src="/images/products/products/PixPin_2025-05-17_16-45-50.png" />
 </Frame>
 
@@ -112,14 +112,29 @@ While useful, uploading a **Mask** is not required and won’t impact the core d
 <Warning>**Mask** image must be in .png format, sized at 600 × 600 pixels, and no larger than 1MB.</Warning>
 
 Upload an image to use as the **Mask** for this Print-Area.
-<Frame caption="xxx">
+<Frame>
   <img src="/images/products/products/PixPin_2025-05-17_16-46-40.png" />
 </Frame>
 
-选择该 Print-Area 的 output format
-<Frame caption="xxx">
+MockSpark automatically transforms the designs your customers create in the `Product Personalizer` into print-ready image files optimized for factory production. These files are referred to as **Placeholders** within the MockSpark platform.
+
+Setting the **output format** for a Print Area determines the file format of the **Placeholder**.
+
+Currently, MockSpark supports five formats, including：
+* `PNG`
+* `TIFF`
+* `TIFF_CMYK`
+* `JPEG`
+* `JPEG_CMYK`
+
+In this tutorial, we'll set the Print Area's **output format** to `TIFF_CMYK`.
+<Frame>
   <img src="/images/products/products/PixPin_2025-05-17_16-47-37.png" />
 </Frame>
+
+A single Print-Area can have multiple values assigned to it, typically to represent different print sizes.
+
+For example, if your T-shirt comes in three sizes—`S`, `M`, and `L`—you can list the corresponding print dimensions based on actual measurements like this:
 
 | Width (px) | Height (px) | DPI         |
 | ---------- | ----------- | ----------- |
@@ -127,17 +142,27 @@ Upload an image to use as the **Mask** for this Print-Area.
 | 3713       | 4382        | 300         |
 | 3893       | 4595        | 300         |
 
-1. 点击“Add another value” 创建三行 value
-2. 给这三组 values 分别输入不同尺寸的值
-3. 点击“OK”
-<Frame caption="xxx">
+<Warning>**DPI** xxxxxxxxxxxxxxxx</Warning>
+
+1. Click **Add another value** to create 3 value rows.
+2. For each value row, enter the appropriate settings for `Width`, `Height`, and `DPI`.
+3. Click **OK** to complete the creation of this Print-Area.
+<Frame>
   <img src="/images/products/products/PixPin_2025-05-17_16-53-06.png" />
 </Frame>
 
-选择“Add Print-Area”
-<Frame caption="xxx">
+We've just created our first Print-Area, named `Front side`. Next, we'll set up another Print-Area for the back of the product.
+
+Select **Add Print Area**.
+<Frame>
   <img src="/images/products/products/PixPin_2025-05-17_16-56-09.png" />
 </Frame>
+
+Following the same steps as the previous Print-Area, let's create a new one for the back of the T-shirt and name it `Back Side`.
+
+Select the appropriate images to use as the **Diagram** and **Mask** for this Print-Area.
+
+Enter the values for this Print-Area based on the list below.
 
 | Width (px) | Height (px) | DPI         |
 | ---------- | ----------- | ----------- |
@@ -145,70 +170,80 @@ Upload an image to use as the **Mask** for this Print-Area.
 | 3737       | 4538        | 300         |
 | 3913       | 4751        | 300         |
 
-1. 用同样的方式，我们再创建一个名为“Back side”
-2. 点击“OK”
-<Frame caption="xxx">
+1. Create a Print-Area named `Back side`.
+2. Click **OK** to complete the creation of this Print-Area.
+<Frame>
   <img src="/images/products/products/PixPin_2025-05-17_16-59-53.png" />
 </Frame>
 
-创建完 Print-Area 之后，还可以编辑、删除或者调整它们的排序
-<Frame caption="xxx">
+Once you've created these Print-Areas, you can still edit, delete, or reorder them as needed.
+<Frame>
   <img src="/images/products/products/PixPin_2025-05-17_17-01-47.png" />
 </Frame>
 
-点击"Add Another Option"
-<Frame caption="xxx">
+Now that we've finished setting up the Print Areas for this product, let's move on to creating its **Variant options**.
+
+Each product can have up to three variant options. Combinations of these options define all the possible variations of the product.
+
+In this tutorial, we'll create two variant options—one for `Color` and one for `Size`.
+
+Click **Add Another Option**
+<Frame>
   <img src="/images/products/products/PixPin_2025-05-17_17-04-45.png" />
 </Frame>
 
-给该 option 命名为 Color
-<Frame caption="xxx">
+Name this variant option `Color`.
+<Frame>
   <img src="/images/products/products/PixPin_2025-05-17_17-05-40.png" />
 </Frame>
 
-1. 点击“Add another value” 创建六行 value
-2. 给这六组 values 分别输入不同尺寸的值：`White`、`Grey`、`Black`、`Red`、`Stone`、`Navy`
-3. 点击“OK”
-<Frame caption="xxx">
+1. Click **Add another value** to create 6 value rows.
+2. Enter a different color for each value row: `White`, `Grey`, `Black`, `Red`, `Stone`, and `Navy`.
+3. Click **OK** to complete the creation of this variant option.
+<Frame>
   <img src="/images/products/products/PixPin_2025-05-17_17-07-16.png" />
 </Frame>
 
-点击"Add Another Option"
-<Frame caption="xxx">
+After setting up the `Color` variant option, let’s move on to creating the `Size` variant option.
+
+Click **Add Another Option**
+<Frame>
   <img src="/images/products/products/PixPin_2025-05-17_19-54-54.png" />
 </Frame>
 
-1. 给该 option 命名为 Size, 分别输入不同尺寸的值：`S`、`M`、`L`
-2. 点击“OK”
-<Frame caption="xxx">
+1. Create a variant option named `Size`, and add 3 value rows to it: `S`, `M`, and `L`.
+2. Click **OK** to complete the creation of this variant option.
+<Frame>
   <img src="/images/products/products/PixPin_2025-05-17_19-56-24.png" />
 </Frame>
 
-创建完 Variant Option 之后，还可以编辑、删除或者调整它们的排序
-<Frame caption="xxx">
+Once you've created these variant option, you can still edit, delete, or reorder them as needed.
+<Frame>
   <img src="/images/products/products/PixPin_2025-05-17_19-57-59.png" />
 </Frame>
 
-创建完 Variant Option 之后，可以看到系统会根据你创建的 Variant Option 来自动生成该产品的 Variant 表
-<Frame caption="xxx">
+Once you've created the two variant options, such as `Color` and `Size`, the system will automatically generate a variant table that combines these options for your product.
+
+In the **Variants** table, you can view all the different versions of your product.
+<Frame>
   <img src="/images/products/products/PixPin_2025-05-17_20-07-10.png" />
 </Frame>
 
-1. 在 Variant 表中，我们勾选出所有尺码为 S 的变体
-2. 点击 “Bulk Edit”
-<Frame caption="xxx">
+1. In the **Variants** table, we’ve selected all product variants in size `S`.
+2. Click on **Bulk Edit**.
+<Frame>
   <img src="/images/products/products/PixPin_2025-05-17_20-11-56.png" />
 </Frame>
 
-选择 "Bulk Edit Print-Areas for Variants"
-<Frame caption="xxx">
+Select **Bulk Edit Print Areas for Variants**.
+<Frame>
   <img src="/images/products/products/PixPin_2025-05-17_20-13-35.png" />
 </Frame>
 
-1. 在 Print-Area (Front side) 中，选择 3623 * 4276 px
-2. 在 Print-Area (Back side) 中，选择 3650 * 4432 px
-3. 选择"Apply to selected variants"
-<Frame caption="xxx">
+1. For the **Print Area (Front side)** field, select `3623 × 4276 px`.
+2. For the **Print Area (Back side)** field, select `3650 × 4432 px`.
+3. Click **Apply to Selected Variants**.
+<Frame>
   <img src="/images/products/products/PixPin_2025-05-17_20-15-19.png" />
 </Frame>
 
