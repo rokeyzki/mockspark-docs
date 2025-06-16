@@ -6,13 +6,98 @@ icon: "list-ordered"
 
 import { ColorText } from "/snippets/color-text.mdx"
 
-## 1111
-1111
+## What is a Order-Item?
+When a customer places a customized product order through your store and completes payment, the order is automatically synced with MockSpark. Once we receive the order details, we break it down by product into smaller sub-orders, which we refer to as **Order Items**.
 
-11111 <ColorText color="#3b82f6" text="111111 2222" /> 222222
+Breaking down a single order into multiple **Order-Items** offers several key benefits:
+1. A single order may include both customizable products fulfilled by MockSpark and other unrelated products sold in your store. Since we don’t handle those unrelated items, automatically filtering them out helps simplify order management and reduce confusion for you.
+2. If a customer places one order for a T-shirt and later places another order for a hat, and both items are fulfilled through the same platform (such as Printify), we can now consolidate these Order Items based on the shipping address before sending them to the fulfillment provider. This significantly reduces shipping costs by avoiding duplicate shipment fees for items going to the same customer.
+3. If an order contains an item that is out of stock or has another issue, we can easily move forward with fulfilling the available items without requiring you to manually split the order. This helps ensure faster fulfillment and reduces the risk of losing the entire order.
 
-<br/>
-status: \n <ColorText color="#3b82f6" text="Generating" />
+Go to the **Order Items** section from the top navigation bar.
+<Frame>
+  <img src="/images/order-items/order-items/PixPin_2025-05-27_16-24-58.png" />
+</Frame>
+
+搜索区域支持以下6种查询条件：
+1. Shopify Order Name
+2. Order Create At
+3. Product Title
+4. Customer Email
+5. Fulfillment Platform
+6. Status
+
+在搜索区域中先输入你的查询条件，再点击**Search**按钮开始搜索。
+<Frame>
+  <img src="/images/order-items/order-items/PixPin_2025-05-27_16-27-00.png" />
+</Frame>
+
+列表中的每一行代表一个Order Item, 点击该行可以跳转到对应的 Order Item 详情页
+<Frame>
+  <img src="/images/order-items/order-items/PixPin_2025-05-27_16-32-42.png" />
+</Frame>
+
+1. 在列表页勾选你需要的 Order Items
+2. 对你勾选的 Order Items 进行批量提交履行，或者导出CSV格式的数据
+<Frame>
+  <img src="/images/order-items/order-items/PixPin_2025-05-27_16-34-25.png" />
+</Frame>
+
+在 Order Item 详情页的头部，你可以看到该Order-Item的基础信息，包括创建时间、Order-Item status等
+<Frame>
+  <img src="/images/order-items/order-items/PixPin_2025-05-27_16-53-58.png" />
+</Frame>
+
+在 Store 模块，你可以看到该 Order Item 在销售平台(例如shopify)中的各种信息
+<Frame>
+  <img src="/images/order-items/order-items/PixPin_2025-05-27_16-54-47.png" />
+</Frame>
+
+在 Store 模块的左侧，你可以看到该 Order Item 的 Notes、Customer、Shipping Method等信息，如果客户在销售平台(例如shopify)中修改了 Notes、Customer等信息，可以点击 **Sync** 按钮进行同步更改。
+<Frame>
+  <img src="/images/order-items/order-items/PixPin_2025-05-27_16-56-53.png" />
+</Frame>
+
+选择**Redesign**会弹出包含该 Order Item 的设计信息的`Product Personalizer`，可以在`Product Personalizer`中对该 Order Item 的设计进行调整
+<Frame>
+  <img src="/images/order-items/order-items/PixPin_2025-05-27_16-58-53.png" />
+</Frame>
+
+1. 除了在`Product Personalizer`中对该 Order Item 的设计进行调整，也可以点击变体框，切换该 Order Item 对应的变体
+2. 选择 **Save design** 进行保存
+<Frame>
+  <img src="/images/order-items/order-items/PixPin_2025-05-27_17-00-24.png" />
+</Frame>
+
+1. 选择 **Send to Fulfill**
+2. 在弹框中选择你要用来履行该 Order Item 的 Printify store（不同的履行平台这里的交互会有差异）
+3. 点击弹框中的 **Send to Fulfill**，将该 Order Item 推送给履行平台
+<Frame>
+  <img src="/images/order-items/order-items/PixPin_2025-05-27_17-02-14.png" />
+</Frame>
+
+点击 **Move actions**，可以在下来框中看到更多的功能，包括：
+1. Export CSV
+2. Download production files
+3. Manually mark as fulfilled
+4. Cancel order
+5. Archive
+<Frame>
+  <img src="/images/order-items/order-items/PixPin_2025-05-27_17-03-23.png" />
+</Frame>
+
+在 Fulfillment 模块，你可以看到该 Order Item 在履行平台(例如printify)中的各种信息
+<Frame>
+  <img src="/images/order-items/order-items/PixPin_2025-05-27_17-04-15.png" />
+</Frame>
+
+在 Timeline 模块，你可以看到该 Order Item 的操作和变更记录
+<Frame>
+  <img src="/images/order-items/order-items/PixPin_2025-05-27_17-05-13.png" />
+</Frame>
+
+## Status of Order-Item Explained
+status: <ColorText color="#3b82f6" text="Generating" />
 <ColorText color="#eab308" text="Ready to fulfill" />
 <br/>
 <ColorText color="#3b82f6" text="Sending" />
@@ -27,6 +112,7 @@ status: \n <ColorText color="#3b82f6" text="Generating" />
 <br/>
 <ColorText color="#6b7280" text="Archived" />
 
+## Order-Item Process
 ```mermaid
 flowchart TB
     A([Customers place orders on the sales platform]) --> B[MockSpark receives Order-Item]
@@ -48,55 +134,3 @@ flowchart TB
 
     P --> Q([Receive ❤ positive feedback from customers])
 ```
-
-<Frame caption="xxx">
-  <img src="/images/order-items/order-items/PixPin_2025-05-27_16-24-58.png" />
-</Frame>
-
-<Frame caption="xxx">
-  <img src="/images/order-items/order-items/PixPin_2025-05-27_16-27-00.png" />
-</Frame>
-
-<Frame caption="xxx">
-  <img src="/images/order-items/order-items/PixPin_2025-05-27_16-32-42.png" />
-</Frame>
-
-<Frame caption="xxx">
-  <img src="/images/order-items/order-items/PixPin_2025-05-27_16-34-25.png" />
-</Frame>
-
-<Frame caption="xxx">
-  <img src="/images/order-items/order-items/PixPin_2025-05-27_16-53-58.png" />
-</Frame>
-
-<Frame caption="xxx">
-  <img src="/images/order-items/order-items/PixPin_2025-05-27_16-54-47.png" />
-</Frame>
-
-<Frame caption="xxx">
-  <img src="/images/order-items/order-items/PixPin_2025-05-27_16-56-53.png" />
-</Frame>
-
-<Frame caption="xxx">
-  <img src="/images/order-items/order-items/PixPin_2025-05-27_16-58-53.png" />
-</Frame>
-
-<Frame caption="xxx">
-  <img src="/images/order-items/order-items/PixPin_2025-05-27_17-00-24.png" />
-</Frame>
-
-<Frame caption="xxx">
-  <img src="/images/order-items/order-items/PixPin_2025-05-27_17-02-14.png" />
-</Frame>
-
-<Frame caption="xxx">
-  <img src="/images/order-items/order-items/PixPin_2025-05-27_17-03-23.png" />
-</Frame>
-
-<Frame caption="xxx">
-  <img src="/images/order-items/order-items/PixPin_2025-05-27_17-04-15.png" />
-</Frame>
-
-<Frame caption="xxx">
-  <img src="/images/order-items/order-items/PixPin_2025-05-27_17-05-13.png" />
-</Frame>
