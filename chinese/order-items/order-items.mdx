@@ -1,13 +1,15 @@
 ---
 title: Order-Items
-description: "xxxxxx"
+description: "Manage your customizable product orders more efficiently"
 icon: "list-ordered"
 ---
 
 import { ColorText } from "/snippets/color-text.mdx"
 
 ## What is a Order-Item?
-When a customer places a customized product order through your store and completes payment, the order is automatically synced with MockSpark. Once we receive the order details, we break it down by product into smaller sub-orders, which we refer to as **Order Items**.
+When a customer places a customized product order through your store and completes payment, the order is automatically synced with MockSpark. Once we receive the order details, we break it down by product into smaller sub-orders, which we refer to as **Order-Items**.
+
+<Tip>**The relationship between orders and order items**: From a customer perspective, an order is a list of selected products. For example, an order might contain two cups and a hat. Each product on that list is an order item. From a store perspective, an order is a list of order items. It is part of the store's data.</Tip>
 
 Breaking down a single order into multiple **Order-Items** offers several key benefits:
 1. A single order may include both customizable products fulfilled by MockSpark and other unrelated products sold in your store. Since we don’t handle those unrelated items, automatically filtering them out helps simplify order management and reduce confusion for you.
@@ -19,98 +21,99 @@ Go to the **Order Items** section from the top navigation bar.
   <img src="/images/order-items/order-items/PixPin_2025-05-27_16-24-58.png" />
 </Frame>
 
-搜索区域支持以下6种查询条件：
-1. Shopify Order Name
-2. Order Create At
-3. Product Title
-4. Customer Email
-5. Fulfillment Platform
-6. Status
+## Search
+The search area in the **Order Items** section supports the following six filter options:
+1. `Shopify Order Name`: Unique identifier for the order that appears on the Shopify order. For example, #1000 or _Store1001.
+2. `Order Create At`: The date and time when the Order-Item was created. You can filter by a date range, with support for searching up to the most recent 90 days
+3. `Product Title`: The product title with the Order-Item. Supports partial keyword search.
+4. `Customer Email`: The customer's email address associated with the Order-Item.
+5. `Fulfillment Platform`: The fulfillment platform responsible for processing the product in the Order-Item.
+6. `Status`: The status of the Order-Item. To learn more, see our [Status of Order-Item Explained](/chinese/order-items/order-items#status-of-order-item-explained)
 
-在搜索区域中先输入你的查询条件，再点击**Search**按钮开始搜索。
+You can apply multiple filters at once to refine your search. Click the **Search** button to view Order-Items that match your selected criteria.
 <Frame>
   <img src="/images/order-items/order-items/PixPin_2025-05-27_16-27-00.png" />
 </Frame>
 
-列表中的每一行代表一个Order Item, 点击该行可以跳转到对应的 Order Item 详情页
+## Actions for a Single Order-Item
+Each row in the list represents a single Order-Item. Click on a row to view the detailed page for that specific Order-Item.
 <Frame>
   <img src="/images/order-items/order-items/PixPin_2025-05-27_16-32-42.png" />
 </Frame>
 
-1. 在列表页勾选你需要的 Order Items
-2. 对你勾选的 Order Items 进行批量提交履行，或者导出CSV格式的数据
-<Frame>
-  <img src="/images/order-items/order-items/PixPin_2025-05-27_16-34-25.png" />
-</Frame>
-
-在 Order Item 详情页的头部，你可以看到该Order-Item的基础信息，包括创建时间、Order-Item status等
+At the top of the Order-Item detail page, you can view key information about the Order-Item, including its creation date, status, and more.
 <Frame>
   <img src="/images/order-items/order-items/PixPin_2025-05-27_16-53-58.png" />
 </Frame>
 
-在 Store 模块，你可以看到该 Order Item 在销售平台(例如shopify)中的各种信息
+In the `Store` section of the detail page, you can view various details about this Order-Item as it appears on the sales platform, such as Shopify.
 <Frame>
   <img src="/images/order-items/order-items/PixPin_2025-05-27_16-54-47.png" />
 </Frame>
 
-在 Store 模块的左侧，你可以看到该 Order Item 的 Notes、Customer、Shipping Method等信息，如果客户在销售平台(例如shopify)中修改了 Notes、Customer等信息，可以点击 **Sync** 按钮进行同步更改。
+On the left side of the `Store` section, you’ll find information such as **Notes**, **Customer**, and **Shipping Method** for this Order-Item.
+
+If the customer updates details such as Notes or Customer information on the sales platform (for example, Shopify) after placing the order, you can click the **Sync** button to update the Order-Item accordingly.
 <Frame>
   <img src="/images/order-items/order-items/PixPin_2025-05-27_16-56-53.png" />
 </Frame>
 
-选择**Redesign**会弹出包含该 Order Item 的设计信息的`Product Personalizer`，可以在`Product Personalizer`中对该 Order Item 的设计进行调整
+You can also adjust the design of this Order-Item by clicking the **Redesign** button and making changes in the `Product Personalizer`.
 <Frame>
   <img src="/images/order-items/order-items/PixPin_2025-05-27_16-58-53.png" />
 </Frame>
 
-1. 除了在`Product Personalizer`中对该 Order Item 的设计进行调整，也可以点击变体框，切换该 Order Item 对应的变体
-2. 选择 **Save design** 进行保存
+In the `Product Personalizer`, you can not only edit the design of the Order-Item but also change the associated **variant**, such as the product size or style.
+
+Click **Save Design** to save your changes.
 <Frame>
   <img src="/images/order-items/order-items/PixPin_2025-05-27_17-00-24.png" />
 </Frame>
 
-1. 选择 **Send to Fulfill**
-2. 在弹框中选择你要用来履行该 Order Item 的 Printify store（不同的履行平台这里的交互会有差异）
-3. 点击弹框中的 **Send to Fulfill**，将该 Order Item 推送给履行平台
+Steps to fulfill this Order-Item:
+1. Click the **Send to Fulfill** button at the top of the Order-Item detail page.
+2. In the dialog box, enter the required information for fulfilling this Order-Item. The form fields may vary depending on the fulfillment platform you are using.
+3. Click the **Send to Fulfill** button in the dialog box to submit this Order-Item to the assigned fulfillment platform.
 <Frame>
   <img src="/images/order-items/order-items/PixPin_2025-05-27_17-02-14.png" />
 </Frame>
 
-点击 **Move actions**，可以在下来框中看到更多的功能，包括：
-1. Export CSV
-2. Download production files
-3. Manually mark as fulfilled
-4. Cancel order
-5. Archive
+Click **Move actions** to open a dropdown menu with additional available options:
+1. `Export CSV`: Export the data for this Order-Item as a CSV file.
+2. `Download production files`: Download the production files for this Order-Item as a ZIP file.
+3. `Manually mark as fulfilled`: Manually mark this Order-Item as `Fulfilled`.
+4. `Cancel order`: Manually mark this Order-Item as `Canceled`.
+5. `Archive`: Manually mark this Order-Item as `Archived`.
 <Frame>
   <img src="/images/order-items/order-items/PixPin_2025-05-27_17-03-23.png" />
 </Frame>
 
-在 Fulfillment 模块，你可以看到该 Order Item 在履行平台(例如printify)中的各种信息
+In the `Fulfillment` section of the detail page, you can view all relevant information about this Order-Item as it appears on the fulfillment platform, such as Printify.
 <Frame>
   <img src="/images/order-items/order-items/PixPin_2025-05-27_17-04-15.png" />
 </Frame>
 
-在 Timeline 模块，你可以看到该 Order Item 的操作和变更记录
+In the `Timeline` section of the detail page, you can view the history of actions and updates related to this Order-Item.
 <Frame>
   <img src="/images/order-items/order-items/PixPin_2025-05-27_17-05-13.png" />
 </Frame>
 
+## Bulk Actions for Multiple Order-Items
+1. On the list page, select the Order-Items you want to take action on. Each row represents a single Order-Item.
+2. You can **bulk fulfill** the selected Order-Items or export them as a **CSV** file.
+<Frame>
+  <img src="/images/order-items/order-items/PixPin_2025-05-27_16-34-25.png" />
+</Frame>
+
 ## Status of Order-Item Explained
-status: <ColorText color="#3b82f6" text="Generating" />
-<ColorText color="#eab308" text="Ready to fulfill" />
-<br/>
-<ColorText color="#3b82f6" text="Sending" />
-<br/>
-<ColorText color="#3b82f6" text="Being fulfilled" />
-<br/>
-<ColorText color="#22c55e" text="Fulfilled" />
-<br/>
-<ColorText color="#ef4444" text="On hold" />
-<br/>
-<ColorText color="#6b7280" text="Canceled" />
-<br/>
-<ColorText color="#6b7280" text="Archived" />
+1. **status:** <ColorText color="#3b82f6" text="Generating" /><br/>_This Order-Item has been placed and is currently in the queue to render the customer's design into the production files._
+2. **status:** <ColorText color="#eab308" text="Ready to fulfill" /><br/>_The production files for this Order-Item have been successfully rendered and are now ready for fulfillment. Please review the details and confirm everything is correct before sending it to the assigned fulfillment platform._
+3. **status:** <ColorText color="#3b82f6" text="Sending" /><br/>_This Order-Item is currently being sent to the assigned fulfillment platform._
+4. **status:** <ColorText color="#3b82f6" text="Being fulfilled" /><br/>_Fulfillment has started. The product in this Order-Item is currently being picked, printed, or packaged. You can track its progress in the order view on the assigned fulfillment platform._
+5. **status:** <ColorText color="#22c55e" text="Fulfilled" /><br/>_This Order-Item has been printed and packaged, but it may not have shipped yet. Please check the tracking details in the order view on the assigned fulfillment platform._
+6. **status:** <ColorText color="#ef4444" text="On hold" /><br/>_This Order-Item was paused and needs your attention. Reasons may include stock issues, design problems, or missing info._
+7. **status:** <ColorText color="#6b7280" text="Canceled" /><br/>_This Order-Item has been canceled, either by you or by the fulfillment platform._
+8. **status:** <ColorText color="#6b7280" text="Archived" /><br/>_This Order-Item has been archived and is now hidden from the list view._
 
 ## Order-Item Process
 ```mermaid
