@@ -1,69 +1,126 @@
 ---
 title: Team Management
-description: "xxxxxx"
+description: "Easily customize role permissions to keep your team organized and working smoothly"
 icon: "users"
 ---
 
-<Frame caption="xxx">
+## Introducing Team Management
+
+Our Team Management feature is designed to help you organize your teams more efficiently and collaborate with ease. With this tool, you can define custom roles, assign the right permissions, and add team members with specific responsibilities, creating a permission structure that fits your organization’s needs.
+
+This feature allows you to:
+* Clearly define roles and responsibilities to boost collaboration.
+* Control access levels to protect sensitive information.
+* Monitor and adjust your team structure as your business grows.
+
+In the following steps, we’ll walk you through how to create roles, add team members, and make the most of Team Management to streamline your daily operations.
+
+## Create a New Role
+
+1. Select **Team** section from the top navigation bar.
+2. In the dropdown menu, click on **Roles**.
+<Frame>
   <img src="/images/team/PixPin_2025-05-07_19-23-14.png" />
 </Frame>
 
-<Frame caption="xxx">
+The **Store owner** refers to the Shopify admin account for a given store. Our system automatically creates a role called `Owner` for this account. This role has full permissions by default and cannot be edited or deleted.
+
+Click **New Role** button to create a new role.
+<Frame>
   <img src="/images/team/PixPin_2025-05-07_19-23-15.png" />
 </Frame>
 
-<Frame caption="xxx">
+1. Enter a name for the new role in the **Role name** field.
+2. Select the **Permissions** you want to assign by checking boxes within the six permission sets.
+    <Warning>Each permission set includes two access levels: `View` and `Manage`. The `View` permission allows users to see the data, while the `Manage` permission grants the ability to edit it.</Warning>
+    * The **Account** permission set includes the most essential permissions for any role. In most cases, this should be selected for all roles; without it, users may not be able to perform basic account-related actions.
+    * The **Connections** permission set determines whether a user can view and manage features within the `Connections Section`.
+    * The **Products** permission set controls whether a user can access and manage features within the `Products Section`, such as creating new products and publishing them to your store.
+    * The **Order Items** permission set determines whether a user can view and manage features within the `Order Items Section`, such as reviewing and fulfilling order items.
+    * The **Billing** permission set controls whether a user can access and manage features within the `Billing Section`, such as viewing usage and purchase data, upgrading the subscription plan.
+    * The **Marketing** permission set determines whether a user can view and manage features within the `Marketing Section`, such as accessing and editing resource collections like pictures and other media.
+3. Click **Save** to create the role.
+<Frame>
   <img src="/images/team/PixPin_2025-05-07_19-28-22.png" />
 </Frame>
 
-<Frame caption="xxx">
+## Invite a Team Members
+Once you’ve confirmed that the new role has been successfully created, you can move on to adding a team member.
+1. Select **Team** section from the top navigation bar.
+2. In the dropdown menu, click on **Staff**.
+<Frame>
   <img src="/images/team/PixPin_2025-05-07_19-36-19.png" />
 </Frame>
 
-<Frame caption="xxx">
+Click **New Staff** button to create a new team member.
+<Frame>
   <img src="/images/team/PixPin_2025-05-07_19-37-16.png" />
 </Frame>
 
-<Frame caption="xxx">
+1. In the dialog box, enter the new member’s `name`, `email address`, and assigned `role`.
+2. Click **Save** to add the new team member.
+<Frame>
   <img src="/images/team/PixPin_2025-05-07_19-43-32.png" />
 </Frame>
 
-<Frame caption="xxx">
+In the **Staff** table, you’ll see the newly added team member listed. At the same time, the system will automatically send an invitation `email` to that staff.
+<Frame>
   <img src="/images/team/PixPin_2025-05-07_19-44-29.png" />
 </Frame>
 
-<Frame caption="xxx">
+Once the invited team member clicks **Accept the Invite** in the `email`, they will be redirected to the MockSpark account activation page.
+<Warning>The email may take a few minutes to arrive, so please be patient. If you haven’t received it after 15 minutes, check your spam or junk folder. You can also resend the invitation if needed.</Warning>
+<Frame>
   <img src="/images/team/PixPin_2025-05-07_19-46-17.png" />
 </Frame>
 
-<Frame caption="xxx">
+1. On the account activation page, the invited team member can set their **Account Password**, which will be used for future logins. The password must meet the requirements shown on the left side of the screen.
+2. Click **Submit** to complete the account activation process.
+<Frame>
   <img src="/images/team/PixPin_2025-05-07_19-49-04.png" />
 </Frame>
 
-<Frame caption="xxx">
+After the team member successfully activates their account, they will be redirected to the login page. On that page, look for the text that says `"You are a staff? Login here"` and click it to switch to the **Staff Login** view.
+<Frame>
   <img src="/images/team/PixPin_2025-05-07_19-49-58.png" />
 </Frame>
 
-<Frame caption="xxx">
+1. On the **Staff Login** page, team members who have completed account activation need to enter their `email address` and `password`.
+2. Click **Login** to access MockSpark.
+<Frame>
   <img src="/images/team/PixPin_2025-05-07_19-52-07.png" />
 </Frame>
 
-<Frame caption="xxx">
+## How Can Staff Reset Their Password?
+If a team member wants to change their password, they can follow these steps:
+<Tip>This feature is exclusively for team staff members. Store owners should use Shopify OAuth for login.</Tip>
+1. After logging in to MockSpark, click the profile icon in the top-right corner of the page.
+2. Select **Reset Password** from the dropdown menu.
+<Frame>
   <img src="/images/team/PixPin_2025-05-07_19-54-24.png" />
 </Frame>
 
-<Frame caption="xxx">
+1. On the reset password page, team members can set a new password for their account. The password must meet the requirements listed on the left side of the screen.
+2. Click **Submit** to confirm and update the password.
+<Frame>
   <img src="/images/team/PixPin_2025-05-07_19-54-25.png" />
 </Frame>
 
-<Frame caption="xxx">
+If a team member forgets their password and is unable to log in, they can reset it by following these steps:
+
+On the login page, switch to the staff login view and click **Forgot Password**.
+<Frame>
   <img src="/images/team/PixPin_2025-05-07_19-56-28.png" />
 </Frame>
 
-<Frame caption="xxx">
+1. On the reset password page, team members need to enter the `Shopify domain` of their store along with the `email address` associated with their account. A password reset confirmation link will be sent to that `email`.
+2. Click **Submit** to send your request.
+<Frame>
   <img src="/images/team/PixPin_2025-05-07_19-58-27.png" />
 </Frame>
 
-<Frame caption="xxx">
+If everything is correct, the team member will receive an email with a link to reset their password. By clicking the **Reset Password** button in the email, they will be taken to a page where they can complete the password reset process.
+<Warning>The email may take a few minutes to arrive, so please be patient. If you haven’t received it after 15 minutes, check your spam or junk folder. You can also resubmit your request at any time if needed.</Warning>
+<Frame>
   <img src="/images/team/PixPin_2025-05-07_20-00-10.png" />
 </Frame>
