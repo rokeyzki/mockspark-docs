@@ -25,26 +25,26 @@
           {
             "group": "Getting Started",
             "pages": [
-              "chinese/get-started/introduction",
-              "chinese/get-started/quickstart",
-              "chinese/get-started/todo"
+              "docs/get-started/introduction",
+              "docs/get-started/quickstart",
+              "docs/get-started/todo"
             ]
           },
           {
             "group": "Connection Platform",
             "pages": [
-              "chinese/connections/workflow",
+              "docs/connections/workflow",
               {
                 "group": "Store Platform",
                 "icon": "shopping-basket",
-                "pages": ["chinese/connections/shopify"]
+                "pages": ["docs/connections/shopify"]
               },
               {
                 "group": "Fulfillment Platform",
                 "icon": "truck",
                 "pages": [
-                  "chinese/connections/printify",
-                  "chinese/connections/printful"
+                  "docs/connections/printify",
+                  "docs/connections/printful"
                 ]
               }
             ]
@@ -52,47 +52,36 @@
           {
             "group": "Products and Modeling",
             "pages": [
-              "chinese/products/products",
-              "chinese/products/mockup-creator",
-              "chinese/products/personalizer"
+              "docs/products/products",
+              "docs/products/mockup-creator",
+              "docs/products/personalizer"
             ]
           },
           {
             "group": "Orders and Fulfillment",
             "pages": [
-              "chinese/order-items/order-items",
-              "chinese/order-items/troubleshooting"
+              "docs/order-items/order-items",
+              "docs/order-items/troubleshooting"
             ]
           },
           {
             "group": "Marketing",
-            "pages": ["chinese/marketing/picture-collections"]
+            "pages": ["docs/marketing/picture-collections"]
           },
           {
             "group": "Payment and Billing",
             "pages": [
-              "chinese/billing/subscription-plans",
-              "chinese/billing/credit",
-              "chinese/billing/usages",
-              "chinese/billing/purchases"
+              "docs/billing/subscription-plans",
+              "docs/billing/credit",
+              "docs/billing/usages",
+              "docs/billing/purchases"
             ]
           },
           {
             "group": "Account and Team",
             "pages": [
-              "chinese/team/account-settings",
-              "chinese/team/team-management"
-            ]
-          },
-          {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "docs/team/account-settings",
+              "docs/team/team-management"
             ]
           }
         ]
