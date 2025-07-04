@@ -10,7 +10,7 @@
   "favicon": "/favicon.svg",
   "appearance": {
     "default": "dark",
-    "strict": false
+    "strict": true
   },
   "icons": {
     "library": "lucide"
