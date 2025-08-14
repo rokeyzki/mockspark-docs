@@ -26,6 +26,7 @@
             "group": "Getting Started",
             "pages": [
               "docs/get-started/introduction",
+              "docs/get-started/installation-guide",
               "docs/get-started/quickstart",
               "docs/get-started/todo"
             ]
@@ -33,27 +34,14 @@
           {
             "group": "Connection Platform",
             "pages": [
-              "docs/connections/workflow",
-              {
-                "group": "Store Platform",
-                "icon": "shopping-basket",
-                "pages": ["docs/connections/shopify"]
-              },
-              {
-                "group": "Fulfillment Platform",
-                "icon": "truck",
-                "pages": [
-                  "docs/connections/printify",
-                  "docs/connections/printful"
-                ]
-              }
+              "docs/connections/printify",
+              "docs/connections/printful"
             ]
           },
           {
             "group": "Products and Modeling",
             "pages": [
               "docs/products/products",
-              "docs/products/mockup-creator",
               "docs/products/personalizer"
             ]
           },
