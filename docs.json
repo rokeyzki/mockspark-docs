@@ -20,15 +20,13 @@
       {
         "dropdown": "Documentation",
         "icon": "book",
-        "description": "Set up your documentation",
         "groups": [
           {
             "group": "Getting Started",
             "pages": [
               "docs/get-started/introduction",
               "docs/get-started/installation-guide",
-              "docs/get-started/quickstart",
-              "docs/get-started/todo"
+              "docs/get-started/quickstart"
             ]
           },
           {
@@ -68,7 +66,6 @@
           {
             "group": "Account and Team",
             "pages": [
-              "docs/team/account-settings",
               "docs/team/team-management"
             ]
           }
@@ -84,20 +81,19 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@mockspark.com"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://app.mockspark.com"
     }
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "website": "https://app.mockspark.com",
+      "youtube": "https://linkedin.com/company/mintlify"
     }
   }
 }
