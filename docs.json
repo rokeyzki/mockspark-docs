@@ -40,7 +40,8 @@
             "group": "Products and Modeling",
             "pages": [
               "docs/products/products",
-              "docs/products/personalizer"
+              "docs/products/personalizer",
+              "docs/products/tutorials"
             ]
           },
           {
